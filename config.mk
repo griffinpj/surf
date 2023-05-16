@@ -9,8 +9,11 @@ MANPREFIX = $(PREFIX)/share/man
 LIBPREFIX = $(PREFIX)/lib
 LIBDIR = $(LIBPREFIX)/surf
 
-X11INC = `pkg-config --cflags x11`
-X11LIB = `pkg-config --libs x11`
+# X11INC = `pkg-config --cflags x11`
+# X11LIB = `pkg-config --libs x11`
+
+X11INC = /opt/X11/include
+X11LIB = /opt/X11/lib
 
 GTKINC = `pkg-config --cflags gtk+-3.0 gcr-3 webkit2gtk-4.0`
 GTKLIB = `pkg-config --libs gtk+-3.0 gcr-3 webkit2gtk-4.0`
